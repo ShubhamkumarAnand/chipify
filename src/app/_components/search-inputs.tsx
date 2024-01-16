@@ -37,9 +37,10 @@ const SearchInputs: FC<Readonly<SearchInputsProps>> = ({ setResult }) => {
   return (
     <div className="flex flex-col items-center justify-center w-full px-5 mt-32">
       <input
-        className="w-2/5 px-3 py-2 text-xl border-b-4 border-blue-700 outline-none"
+        className="w-2/5 px-3 py-2 text-2xl border-b-4 border-blue-700 outline-none"
         value={input}
         onChange={(e) => handleChange(e.target.value)}
+        placeholder="Search for Users"
       />
     </div>
   );
